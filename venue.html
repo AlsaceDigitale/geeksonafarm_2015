@@ -1,0 +1,36 @@
+---
+layout: default
+title: Venue
+body_class: venue
+---
+
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        <h1>Venue</h1>
+      </div>
+    </div>
+    <div class="row">
+      {% for item in (1..4) %}
+      <div class="col-xs-12 col-sm-6">
+        <a href="{{ site.baseurl }}/img/photo_{{item}}.jpg" class="thumbnail">
+          <img data-src="{{ site.baseurl }}/img/photo_{{item}}.jpg" alt="Photo {{item}}" src="{{ site.baseurl }}/img/photo_{{item}}.jpg" style="height:250px;">
+        </a>
+      </div>
+      {% endfor %}
+    </div>
+    <div class="row">
+      <div class="col-xs-12">
+          <div class="iframe-rwd">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2646.6741179944606!2d7.973251999999999!3d48.443594!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4796d4ab2fe6731d%3A0x17e76508881e3af6!2sDJH+Jugendherberge+Ortenberg!5e0!3m2!1sfr!2sfr!4v1426958406076" width="600" height="450" frameborder="0" style="border:0"></iframe>
+          </div>
+          <a href="https://goo.gl/maps/a7hDN" style="text-align:left" target="_blank">Bigger plan</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+

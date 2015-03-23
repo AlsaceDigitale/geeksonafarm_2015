@@ -1,0 +1,60 @@
+---
+layout: default
+title: French and German startups gathering
+body_class: home
+---
+
+<section class="about">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 text-center">
+        <h1>About</h1>
+      </div>
+      <div class="col-xs-12 text-center">
+        <strong>inspire yourself - learn - network - share experiences - rethink your project - develop your skills</strong>
+      </div>
+      <div class="col-xs-12 col-md-8 col-md-offset-2 text-center">
+        <p style="margin-bottom: 0;">Geeks on a Farm is the startupers bootcamp where entrepreneurs from Germany, France and all over Europe come to network and have a great time together.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="speakers">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 text-center">
+        <h1>Speakers</h1>
+      </div>
+      <div class="col-xs-12 text-center">
+        <p style="margin-top:20px; margin-bottom: 0;">
+        <em>We're adding new speakers and mentors on a regular basis, you should follow us on <a href="https://www.facebook.com/geeksonafarm">Facebook</a> or <a href="https://twitter.com/geeksonafarm">Twitter</a> to stay up to date!</em>
+        </p>
+      </div>
+    </div>
+    <div class="row" style="margin-top: 40px;">
+      {% for speaker in site.speakers %}
+        <div class="col-xs-12 col-md-3 speaker_hp">
+          <a href="/speakers.html#{{ speaker.name | downcase | replace:' ','-' }}" class="thumbnail" title="{{ speaker.name }}">
+            <img src="{{ site.baseurl }}/img/{{ speaker.name | downcase | replace:' ','_' }}.jpg" alt="{{ speaker.name }}">
+          </a>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="agenda">
+  <div class="container">
+    <div class="row timetable">
+      <div class="col-xs-12">
+        <h1 id="agenda" class="text-center">Agenda</h1>
+        <p class="text-muted">
+          Planning is under discussion and is subject to change. The finale version will be announced in the coming weeks. You will find keynotes, panel discussions and workshops.
+        </p>
+        {% include planning.html %}
+      </div>
+    </div>
+  </div>
+</section>
+
