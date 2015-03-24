@@ -243,6 +243,15 @@ footer
   //     top: 20px
 
 @media screen and (max-width: 767px)
+  .navbar > .container .navbar-brand
+    text-align: center
+    img, .text
+      margin-top: 0
+      float: none
+      display: inline-block
+    img
+      margin-top: -33px
+      margin-right: 0
   nav .date
     margin-top: 320px
   .navbar
@@ -250,17 +259,6 @@ footer
     height: 870px
     margin-bottom: 0
     background-color: $header-background-color
-  .navbar-header
-    text-align: center
-  .navbar-brand
-    float: none
-    margin: 10px 0
-    display: block
-    height: auto
-  .navbar-default .navbar-brand
-    padding: 15px
-    margin: 0
-    margin-bottom: 0
   .navbar-default .navbar-nav > li > a
     color: $link-color
     &:hover, &:focus
