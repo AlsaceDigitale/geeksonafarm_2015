@@ -6,56 +6,54 @@ body_class: speakers
 
 <section class="speakers">
   <div class="container">
-
-<div class="row text-center">
-  <div class="col-xs-12">
-    <h1>Speakers</h1>
-    <p class="text-muted">
-      Speakers will be added here incrementally. Stay tuned!
-      In the mean time you may follow us on <a href="https://www.facebook.com/geeksonafarm">Facebook</a> or <a href="https://twitter.com/geeksonafarm">Twitter</a>.
-    </p>
-  </div>
-</div>
-<div class="row">
-  <div class="col-xs-12">
-
-    {% for speaker in site.speakers %}
-      <div class="row speaker" id="{{ speaker.name | downcase | replace:' ','-' }}">
-        <div class="col-xs-12 col-sm-3 text-center">
-          <img src="{{ site.baseurl }}/img/{{ speaker.name | downcase | replace:' ','_' }}.jpg" alt="{{ speaker.name }}">
-        </div>
-        <div class="col-xs-12 col-sm-9">
-          <h2>{{ speaker.name }}</h2>
-          <strong>{{ speaker.title }}</strong>
-          <p>
-            {{ speaker.description }}
-          </p>
-          <ul class="list-inline">
-            <li>
-              {% if speaker.linkedin %}
-              <a href="{{ speaker.linkedin }}"><i class="fa fa-linkedin"></i></a>
-              {% endif %}
-            </li>
-            <li>
-              {% if speaker.twitter %}
-              <a href="{{ speaker.twitter }}"><i class="fa fa-twitter"></i></a>
-              {% endif %}
-            </li>
-            <li>
-              {% if speaker.facebook %}
-              <a href="{{ speaker.facebook }}"><i class="fa fa-facebook"></i></a>
-              {% endif %}
-            </li>
-          </ul>
-        </div>
+    <div class="row text-center">
+      <div class="col-xs-12">
+        <h1>Speakers</h1>
+        <p class="text-muted">
+          Speakers will be added here incrementally. Stay tuned!
+          In the mean time you may follow us on <a href="https://www.facebook.com/geeksonafarm">Facebook</a> or <a href="https://twitter.com/geeksonafarm">Twitter</a>.
+        </p>
       </div>
-
-    {% endfor %}
-
-  </div>
-</div>
-
-
+    </div>
+    <div class="row">
+      <div class="col-xs-12">
+        {% for speaker in site.speakers %}
+          <div class="row speaker" id="{{ speaker.name | downcase | replace:' ','-' }}">
+            <div class="col-xs-12 col-sm-3 text-center">
+              <img src="{{ site.baseurl }}/img/{{ speaker.name | downcase | replace:' ','_' }}.jpg" alt="{{ speaker.name }}" class="img-responsive">
+            </div>
+            <div class="col-xs-12 col-sm-9">
+              <h2>{{ speaker.name }}</h2>
+              <p class="strong">{{ speaker.title }}</p>
+              <ul class="list-inline">
+                <li>
+                  {% if speaker.linkedin %}
+                  <a href="{{ speaker.linkedin }}"><i class="fa fa-linkedin"></i></a>
+                  {% endif %}
+                </li>
+                <li>
+                  {% if speaker.twitter %}
+                  <a href="{{ speaker.twitter }}"><i class="fa fa-twitter"></i></a>
+                  {% endif %}
+                </li>
+                <li>
+                  {% if speaker.facebook %}
+                  <a href="{{ speaker.facebook }}"><i class="fa fa-facebook"></i></a>
+                  {% endif %}
+                </li>
+              </ul>
+              <p>
+                Bio: {{ speaker.bio }}
+              </p>
+              <p>
+                Talk: {{ speaker.talk_title }}
+              </p>
+              {{ speaker.talk_description | markdownify }}
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
   </div>
 </section>
 

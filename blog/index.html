@@ -6,6 +6,11 @@ body_class: "blog"
 
 <section class="posts">
   <div class="container">
+    <div class="row">
+      <div class="col-xs-12 text-center">
+        <h1>Blog</h1>
+      </div>
+    </div>
     {% for post in paginator.posts %}
       {% include post.html %}
     {% endfor %}

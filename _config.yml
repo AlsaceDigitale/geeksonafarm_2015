@@ -8,4 +8,9 @@ paginate: 5
 paginate_path: "blog/page:num"
 speakers:
   - name: Jeremy Chatelaine
-    title: CEo at Quickmail.io
+    title: CEO at Quickmail.io
+    bio: "After 10 years in video games and 6 years in finance as a high performer, he finally built his business in sales acceleration, where he helps small and medium businesses get more responses from their cold emails while saving them a lot of time in doing so."
+    talk_title: The black art of cold emails - Everything you need to know about cold emails to get an avalanche of responses
+    talk_description: "More than half a million of automated emails have been sent through my system. I'll let you know what works, and what doesn't work to avoid easy mistakes and start on the right foot. After this workshop, you will have learnt:\n\n* When to use cold emails and when not to\n* What is the most important thing in cold emailing (hint: it's not what you write)\n* Tactics and strategies to get prospects to email\n* The perfect mindset to get a ton of responses from super cold prospects"
+    linkedin: https://ch.linkedin.com/in/jeremychatelaine
+    twitter: https://twitter.com/jchatelaine

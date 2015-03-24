@@ -1,24 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width initial-scale=1" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-
-    <title>Geeks on a Farm{% if page.title %} - {{ page.title }}{% endif %}</title>
-    {% if page.description %}
-    <meta name="description" content="{{ page.description }}">
-    {% endif %}
-    <link href='http://fonts.googleapis.com/css?family=Bevan' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800italic,800' rel='stylesheet' type='text/css'>
-    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
-    <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
-    <meta property="og:title" content="{% if page.og_title %}{{ page.og_title }}{% else if page.title %}{{ page.title }}{% else %}Geeks on a Farm{% endif %}"/>
-    <meta property="og:type" content="website"/>
-    <meta property="og:description" content="{% if page.og_description %}{{ page.og_description }}{% else if page.description %}{{ page.description }}{% else %}may 21/22/23 2015, Geeks on a Farm is a Startups Bootcamp for everyone who is passionate about entrepreneurships, startups, design and technology. We aim to “Bring Together Startupers from Germany and France” to network and to have a great time together.{% endif %}"/>
-    <meta property="og:image" content="{{ site.url }}/img/{% if page.og_image %}{{ page.og_image }}{% else %}goaf_fb_cover.jpg{% endif %}"/>
-  </head>
+  {% include head.html %}
   <body class="{{ page.body_class }}">
     <div id="fb-root"></div>
     <script>(function(d, s, id) {
@@ -28,52 +10,8 @@
       js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=1418343218413412";
       fjs.parentNode.insertBefore(js, fjs);
     }(document, 'script', 'facebook-jssdk'));</script>
-    <div role="navigation" class="navbar navbar-default navbar-static-top">
-      <div class="container">
-        <div class="navbar-header">
-          <a href="{{ site.baseurl }}/" class="navbar-brand">
-            Geeks
-            <br/>
-            <span class="smaller">on a Farm</span>
-          </a>
-        </div>
-        <div class="">
-          <ul class="nav nav-pills navbar-nav navbar-right nav-list">
-            <li{% if page.body_class == 'home' %} class="active"{% endif %}><a href="{{ site.baseurl }}/">Home</a></li>
-            <li{% if page.body_class == 'speakers' %} class="active"{% endif %}><a href="{{ site.baseurl }}/speakers.html">Speakers</a></li>
-            <li{% if page.body_class == 'venue' %} class="active"{% endif %}><a href="{{ site.baseurl }}/venue.html">Venue</a></li>
-            <li{% if page.body_class == 'blog' %} class="active"{% endif %}><a href="{{ site.baseurl }}/blog">Blog</a></li>
-            <li{% if page.body_class == 'about' %} class="active"{% endif %}><a href="{{ site.baseurl }}/about.html">About</a></li>
-          </ul>
-          <p class="visible-xs text-center" style="margin-top:10px;">{% include calltoaction.html %}</p>
-        </div><!--/.nav-collapse -->
-      </div>
-    </div>
-
-    <header>
-      <div class="container">
-        <div class="row date">
-          <div class="col-xs-12">
-            28-29-30 <span class="lighter">May 2015</span>
-          </div>
-        </div>
-        <div class="row venue">
-          <div class="col-xs-12">
-            Schloss Ortenberg
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-xs-12">
-            <p style="margin-top:20px;" class="hidden-xs">
-              {% include calltoaction.html %}
-            </p>
-          </div>
-        </div>
-      </div>
-    </header>
-
+    {% include navbar.html %}
     {{ content }}
-
     <section>
       <div class="container">
         <div class="row">
@@ -83,7 +21,6 @@
         </div>
       </div>
     </section>
-
     {% include footer.html %}
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>

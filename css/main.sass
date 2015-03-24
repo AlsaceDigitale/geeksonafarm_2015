@@ -23,19 +23,22 @@ $calltoaction_right_textcolor: #7b2f06
 
 @import "bootstrap"
 
+.mt-40
+  margin-top: 40px
+
 h1, .h1
   font-weight: 300
 
 .btn-lg, .btn-group-lg > .btn
   border-radius: 10px
 
-strong
+strong, .strong
   font-weight: 800
   font-size: 16px
   text-transform: uppercase
 
 section
-  padding: 40px
+  padding: 40px 0
   h1
     margin-top: 0
   &.about
@@ -45,7 +48,7 @@ section
     h1
       color: white
 
-header
+nav
   background: url('/img/goaf_banner.jpg') repeat-x top center $header-background-color
   height: 542px
   font-size: 37px
@@ -53,11 +56,37 @@ header
   color: white
   text-shadow: 0px 3px 4px rgba(0, 0, 0, 0.35)
   .date
-    margin-top: 280px
+    margin-top: 220px
   .lighter
     font-weight: 400
   .venue
     font-style: italic
+
+.navbar
+  border: 0
+  border-radius: 0
+  margin-bottom: 0
+  padding-top: 20px
+  > .container .navbar-brand
+    font-family: 'Bevan', cursive
+    text-transform: uppercase
+    color: white
+    font-size: 40px
+    line-height: 0.7
+    height: auto
+    padding: 0
+    img
+      height: 70px
+      float: left
+      margin-top: -6px
+      margin-right: 10px
+    .text
+      float: left
+      .smaller
+        font-size: 23px
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus
+  background-color: $header-background-color
+  color: white
 
 .btn-calltoaction
   background: linear-gradient(to right, $calltoaction_left_bgcolor 0%, $calltoaction_left_bgcolor 30%, $calltoaction_right_bgcolor 30.1%, $calltoaction_right_bgcolor 100%)
@@ -91,57 +120,6 @@ header
   font-size: 15px
   text-shadow: 0px 2px 3px rgba(0, 0, 0, 0.17)
 
-.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus
-  background-color: $header-background-color
-  color: white
-
-.navbar-default
-  background-color: inherit
-  border: 0
-  .navbar-brand
-    padding-top: 10px
-  .navbar-brand, .navbar-brand:hover, .navbar-brand:focus, .navbar-brand:visited
-    font-family: 'Bevan', cursive
-    text-transform: uppercase
-    color: white
-    font-size: 40px
-    line-height: 0.7
-    .smaller
-      font-size: 23px
-
-.nav-tabs > li > a
-  text-transform: uppercase
-  font-size: 140%
-  line-height: 140%
-  padding-left: 40px
-  padding-right: 40px
-
-.nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus
-  background-color: $link-color
-  color: white
-
-.container .jumbotron
-  padding-left: 0
-  padding-right: 0
-
-.jumbotron
-  background-color: inherit
-  color: white
-  position: relative
-  top: 160px
-  left: 40px
-  .smaller
-    font-size: 80%
-    line-height: 80%
-  .even-smaller
-    font-size: 60%
-    line-height: 60%
-
-h1, h2, h3, h4, h5
-  color: $link-color
-  a:hover
-    text-decoration: none
-
 footer
   background-color: #F9F9F9
   padding-top: 45px
@@ -157,26 +135,10 @@ footer
     p
       margin-bottom: 5px
 
-
 .post
   .links
     text-transform: uppercase
     color: $link-color
-
-a, a:hover, a:visited, a:focus
-  color: $link-color
-
-.marketing
-  text-transform: uppercase
-  color: $link-color
-  font-size: 180%
-  line-height: 180%
-  .list-inline > li
-    padding-left: 15px
-    padding-right: 15px
-
-.nav-tabs
-  border-bottom: 2px solid white
 
 .table-bordered > thead > tr > th, .table-bordered > tbody > tr > th, .table-bordered > tfoot > tr > th, .table-bordered > thead > tr > td, .table-bordered > tbody > tr > td, .table-bordered > tfoot > tr > td
   background-color: #F6F6F6
@@ -191,7 +153,6 @@ a, a:hover, a:visited, a:focus
   tr td:first-child
     text-align: right
     vertical-align: top
-    // padding: 0 4px 8px 8px
     padding: 0
     font-weight: 300
     font-size: 12px
@@ -203,13 +164,6 @@ a, a:hover, a:visited, a:focus
 .table > thead > tr > th, .table > tbody > tr > th, .table > tfoot > tr > th, .table > thead > tr > td, .table > tbody > tr > td, .table > tfoot > tr > td
   padding: 3px
   vertical-align: middle
-
-.about
-  h3
-    padding-bottom: 15px
-    border-bottom: 1px solid #ccc
-  p
-    margin: 15px 0 30px 0
 
 .iframe-rwd
   position: relative
@@ -238,6 +192,7 @@ a, a:hover, a:visited, a:focus
       height: 100px
     .caption
       text-align: center
+
 .pagination > .active > a, .pagination > .active > span, .pagination > .active > a:hover, .pagination > .active > span:hover, .pagination > .active > a:focus, .pagination > .active > span:focus
   border-color: $link-color
   background-color: $link-color
@@ -246,13 +201,11 @@ a, a:hover, a:visited, a:focus
   margin-top: 40px
   h2
     margin-top: 0
-  img
-    max-width: 100%
+    line-height: 1
 
 .row.speakers
   .speaker_hp
     padding-left: 0
-    // padding-right: 0
     .thumbnail
       padding: 0
       border: 0
@@ -281,28 +234,22 @@ a, a:hover, a:visited, a:focus
           width: 40px
 
 @media screen and (min-width: 1000px)
+  // .navbar
+  //   margin-bottom: 0
+  //   min-height: 0
+  //   height: 0
+  //   .container
+  //     position: relative
+  //     top: 20px
+
+@media screen and (max-width: 767px)
+  nav .date
+    margin-top: 320px
   .navbar
-    margin-bottom: 0
-    min-height: 0
-    height: 0
-    .container
-      position: relative
-      top: 20px
-
-@media screen and (max-width: 1199px)
-  .jumbotron
-    left: 0
-
-@media screen and (max-width: 999px)
-  .jumbotron
-    top: 20px
-
-  header
     background-position: center bottom
-    height: 380px
-  .navbar
+    height: 870px
     margin-bottom: 0
-    // background-color: $bannerTopColor
+    background-color: $header-background-color
   .navbar-header
     text-align: center
   .navbar-brand
@@ -332,7 +279,7 @@ a, a:hover, a:visited, a:focus
     li
       width: 100%
       // border-bottom: 1px solid rgba(255, 255, 255, 0.05)
-      padding: 0.5em
+      // padding: 0.5em
       color: transparent
       transition: background-color 0.3s ease-in-out 0s
       // display: block
@@ -349,12 +296,6 @@ a, a:hover, a:visited, a:focus
       color: white
       text-align: center
 
-@media screen and (max-width: 767px)
-  .jumbotron
-    top: 100px
-  .marketing
-    ul > li
-      width: 100%
   .timetable
     .nav-tabs > li > a
       padding-left: 10px
