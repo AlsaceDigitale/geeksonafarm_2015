@@ -4,8 +4,11 @@ title: Speakers
 body_class: speakers
 ---
 
-<div class="row">
-  <div class="col-md-12">
+<section class="speakers">
+  <div class="container">
+
+<div class="row text-center">
+  <div class="col-xs-12">
     <h1>Speakers</h1>
     <p class="text-muted">
       Speakers will be added here incrementally. Stay tuned!
@@ -14,14 +17,14 @@ body_class: speakers
   </div>
 </div>
 <div class="row">
-  <div class="col-md-12">
+  <div class="col-xs-12">
 
     {% for speaker in site.speakers %}
       <div class="row speaker" id="{{ speaker.name | downcase | replace:' ','-' }}">
-        <div class="col-md-3 text-center">
+        <div class="col-xs-12 col-sm-3 text-center">
           <img src="{{ site.baseurl }}/img/{{ speaker.name | downcase | replace:' ','_' }}.jpg" alt="{{ speaker.name }}">
         </div>
-        <div class="col-md-9">
+        <div class="col-xs-12 col-sm-9">
           <h2>{{ speaker.name }}</h2>
           <strong>{{ speaker.title }}</strong>
           <p>
@@ -51,3 +54,8 @@ body_class: speakers
 
   </div>
 </div>
+
+
+  </div>
+</section>
+
