@@ -5,9 +5,21 @@
   <title>Geeks on a Farm{% if page.title %} - {{ page.title }}{% endif %}</title>
   <meta property="og:title" content="{% if page.og_title %}{{ page.og_title }}{% else %}Geeks on a Farm - {% if page.title %}{{ page.title }}{% endif %}{% endif %}"/>
   {% if page.description %}
-  <meta name="description" content="{% if page.og_description %}{{ page.og_description }}{% else if page.description %}{{ page.description }}{% else %}may 21/22/23 2015, Geeks on a Farm is a Startups Bootcamp for everyone who is passionate about entrepreneurships, startups, design and technology. We aim to “Bring Together Startupers from Germany and France” to network and to have a great time together.{% endif %}">
-  <meta property="og:description" content="{% if page.og_description %}{{ page.og_description }}{% else if page.description %}{{ page.description }}{% else %}may 21/22/23 2015, Geeks on a Farm is a Startups Bootcamp for everyone who is passionate about entrepreneurships, startups, design and technology. We aim to “Bring Together Startupers from Germany and France” to network and to have a great time together.{% endif %}"/>
+  <meta name="description" content="{{ page.description }}">
+  {% else if page.og_description %}
+  <meta name="description" content="{{ page.og_description }}">
+  {% else %}
+  <meta name="description" content="Geeks on a Farm is a Startups Bootcamp for everyone who is passionate about entrepreneurships, startups, design and technology. We aim to “Bring Together Startupers from Germany and France” to network and to have a great time together.">
   {% endif %}
+
+  {% if page.og_description %}
+  <meta name="og:description" content="{{ page.og_description }}">
+  {% else if page.description %}
+  <meta name="og:description" content="{{ page.description }}">
+  {% else %}
+  <meta name="og:description" content="Geeks on a Farm is a Startups Bootcamp for everyone who is passionate about entrepreneurships, startups, design and technology. We aim to “Bring Together Startupers from Germany and France” to network and to have a great time together.">
+  {% endif %}
+
   <link href='http://fonts.googleapis.com/css?family=Bevan' rel='stylesheet' type='text/css'>
   <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800italic,800' rel='stylesheet' type='text/css'>
   <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
