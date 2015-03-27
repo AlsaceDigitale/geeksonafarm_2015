@@ -8,13 +8,16 @@ og_description: Geeks on a Farm is a Startups Bootcamp for everyone who is passi
   <div class="container">
     <div class="row">
       <div class="col-xs-12 text-center">
-        <h1>About</h1>
+        <h1 style="margin-bottom:40px;">About</h1>
       </div>
-      <div class="col-xs-12 text-center">
+      <div class="col-xs-12 text-center" style="margin-bottom:20px;">
         <strong>inspire yourself - learn - network - share experiences - rethink your project - develop your skills</strong>
       </div>
       <div class="col-xs-12 col-md-8 col-md-offset-2 text-center">
         <p style="margin-bottom: 0;">Geeks on a Farm is the startupers bootcamp where entrepreneurs from Germany, France and all over Europe come to network and have a great time together.</p>
+      </div>
+      <div class="col-xs-12 col-sm-4 col-sm-offset-4 text-center">
+        <a href="/about.html" class="btn btn-transparent btn-lg btn-block">know more</a>
       </div>
     </div>
   </div>
@@ -35,16 +38,20 @@ og_description: Geeks on a Farm is a Startups Bootcamp for everyone who is passi
     <div class="row" style="margin-top: 40px;">
       {% for speaker in site.speakers %}
         <div class="col-xs-12 col-md-3 speaker_hp">
-          <a href="/speakers.html#{{ speaker.name | downcase | replace:' ','-' }}" class="thumbnail" title="{{ speaker.name }}">
+          <div href="/speakers.html#{{ speaker.name | downcase | replace:' ','-' }}" class="thumbnail" title="{{ speaker.name }}">
             <img src="{{ site.baseurl }}/img/{{ speaker.name | downcase | replace:' ','_' }}.jpg" alt="{{ speaker.name }}">
-          </a>
+            <div class="overlay text-center">
+              <span class="name">{{ speaker.name }}</span>
+              <a href="/speakers.html#{{ speaker.name | downcase | replace:' ','-' }}" class="btn btn-transparent btn-lg know-more">know more</a>
+            </div>
+          </div>
         </div>
       {% endfor %}
     </div>
   </div>
 </section>
 
-<section class="agenda">
+<section class="agenda" style="padding-top:0;">
   <div class="container">
     <div class="row timetable">
       <div class="col-xs-12">
