@@ -41,12 +41,35 @@ section
   padding: 40px 0
   h1
     margin-top: 0
-  &.about
+  &.about, &.blog-post
     color: white
     background: url('/img/goaf_pattern.jpg') repeat
     background-color: $header-background-color
     h1
       color: white
+  &.blog-post
+    padding-bottom: 0
+    h1
+      margin-bottom: 40px
+    .well
+      background-color: white
+      padding: 40px
+      border-radius: 10px
+      .post-date
+        font-size: 20px
+        color: $headings-color
+      .post-title
+        font-size: 20px
+        font-weight: 800
+        color: $headings-color
+      .post-body
+        color: black
+      .post-link
+        color: black
+        font-weight: 800
+      .btn-transparent
+        color: $headings-color
+        border-color: $headings-color
 
 nav
   background: url('/img/goaf_banner.jpg') repeat-x top center $header-background-color
@@ -132,8 +155,7 @@ nav
 
 footer
   background-color: #F9F9F9
-  padding-top: 45px
-  margin-top: 45px
+  padding-top: 40px
   h3
     padding-bottom: 15px
     border-bottom: 1px solid #ccc

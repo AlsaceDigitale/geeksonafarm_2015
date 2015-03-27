@@ -1,3 +1,30 @@
+<section class="blog-post">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 text-center">
+        <h1>Blog</h1>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12 col-sm-6">
+        <img src="/img/img-blog.png" class="img-responsive" />
+      </div>
+      <div class="col-xs-12 col-sm-6">
+        <div class="well">
+          {% for post in site.posts | limit:3 %}
+            <ul class="list-unstyled">
+              <li class="post-date">{{ post.date | date_to_string }}</li>
+              <li class="post-title">{{ post.title }}</li>
+              <li class="post-body">{{ post.excerpt | truncate:130 }}</li>
+              <li class="text-right"><a href="{{ post.url }}" class="post-link">Read more »</a></li>
+            </ul>
+          {% endfor %}
+          <a href="/blog" class="btn btn-transparent btn-lg">See all posts</a>
+        </div>
+      </div>
+  </div>
+</section>
+
 <footer>
   <div class="container">
   <div class="row">
