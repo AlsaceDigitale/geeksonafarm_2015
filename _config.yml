@@ -15,6 +15,9 @@ team_members:
     nickname: jayce
     xing:
     twitter: https://twitter.com/Jc_gay
+  - name: Christian Atz
+    nickname: atz
+    linkedin: https://www.linkedin.com/in/christianatz
 speakers:
   - name: Jeremy Chatelaine
     title: CEO at Quickmail.io
