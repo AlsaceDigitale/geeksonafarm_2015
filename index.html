@@ -38,7 +38,7 @@ og_description: Geeks on a Farm is a Startups Bootcamp for everyone who is passi
     <div class="row" style="margin-top: 40px;">
       {% for speaker in site.speakers %}
         <div class="col-xs-12 col-md-3 speaker_hp">
-          <div href="/speakers.html#{{ speaker.name | downcase | replace:' ','-' }}" class="thumbnail" title="{{ speaker.name }}">
+          <div class="thumbnail">
             <img src="{{ site.baseurl }}/img/{{ speaker.name | downcase | replace:' ','_' }}.jpg" alt="{{ speaker.name }}">
             <div class="overlay text-center">
               <span class="name">{{ speaker.name }}</span>
