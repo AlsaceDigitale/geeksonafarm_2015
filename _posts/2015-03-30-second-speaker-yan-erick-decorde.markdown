@@ -3,7 +3,7 @@ layout: post
 title:  "Yan-Erick Decorde will introduce Geeks on a Farm 2015"
 date:   2015-03-30 10:05:00
 categories: blog
-og_image: yan-erick_decorde.jpg
+og_image: yan-erik_decorde.jpg
 ---
 
 Yan-Erik Decorde will come to Geek on a Farm 2015 with a motivational and informational talk on the mindset of the exponential entrepreneur that will introduce the whole 3 days event.
