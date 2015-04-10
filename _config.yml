@@ -25,7 +25,7 @@ team_members:
 speakers:
   - name: Jeremy Chatelaine
     title: CEO at Quickmail.io
-    bio: "After 10 years in video games and 6 years in finance as a high performer, he finally built his business in sales acceleration, where he helps small and medium businesses get more responses from their cold emails while saving them a lot of time in doing so."
+    bio: "After 10 years in video games and 6 years in finance as a high performer, Jeremy finally built his business in sales acceleration ([Quickmail.io](https://quickmail.io)), where he helps small and medium businesses get more responses from their cold emails while saving them a lot of time in doing so."
     talk_title: The black art of cold emails - Everything you need to know about cold emails to get an avalanche of responses
     talk_description: "More than half a million of automated emails have been sent through my system. I'll let you know what works, and what doesn't work to avoid easy mistakes and start on the right foot. After this workshop, you will have learnt:\n\n* When to use cold emails and when not to\n* What is the most important thing in cold emailing (hint: it's not what you write)\n* Tactics and strategies to get prospects to email\n* The perfect mindset to get a ton of responses from super cold prospects"
     linkedin: https://ch.linkedin.com/in/jeremychatelaine
@@ -36,3 +36,10 @@ speakers:
     talk_description: "* The disruption of exponential technologies and the fields ready for entrepreneurial exploitation\n\n* The mindset required to bootstrap an exponential curve\n\n* The secrets of going skunk\n\n* The motivation and flow states to release the human potential."
     linkedin: https://www.linkedin.com/pub/yan-erik-decorde/20/49/854
     twitter: https://twitter.com/yanerikdecorde
+  - name: Thibaut Vincent
+    title: Founder of Lemon Factory
+    bio: "Thibault is the founder of [Lemon Factory](http://lemonfactory.fr/), a french conversion rate optimization agency. His key areas of expertise are conversion rate optimization, copywriting and website monetization.\n\nHe has written a best-selling book, published by Pearson, on how to make money with a website. And a second one on affiliate marketing. He speaks regularly at events, conferences and business schools (La Sorbonne, Inseec, SEO Camp Day, JCertif, etc.)."
+    talk_title: "How to create an high-converting website and double your sales"
+    talk_description: "Based on a real use case, Thibaut will walk through all the learnings he's made on funnel optimizations to share his knowledge."
+    linkedin: https://www.linkedin.com/pub/thibault-vincent/1a/8a8/29b
+    twitter: https://twitter.com/thibaultvincent

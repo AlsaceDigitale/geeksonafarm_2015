@@ -44,7 +44,7 @@ og_description: List of speakers for Geeks on a Farm 2015
                 </li>
               </ul>
               <p>
-                Bio: {{ speaker.bio }}
+                {{ speaker.bio | markdownify }}
               </p>
               <p>
                 Talk: {{ speaker.talk_title }}
