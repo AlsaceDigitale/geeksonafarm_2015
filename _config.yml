@@ -43,3 +43,10 @@ speakers:
     talk_description: "Based on a real use case, Thibaut will walk through all the learnings he's made on funnel optimizations to share his knowledge."
     linkedin: https://www.linkedin.com/pub/thibault-vincent/1a/8a8/29b
     twitter: https://twitter.com/thibaultvincent
+  - name: Alexandre Winter
+    title: CEO and Founder at Placemeter
+    bio: "Before starting Placemeter, Alex was the Co-Founder and CEO of LTU Technologies. He has a PhD in Image Recognition from Telecom Paris, holds 7 patents in the field, and has over 20 years of computer vision expertise in applications ranging from satellite reconnaissance to augmented reality.\n\nPlacemeter made through Techstars 2013 NYC, won WebSummit Alpha Pitch Competition (oct 2013) and raised 3 rounds in the US."
+    talk_title: "'If you can make it there, you can make it anywhere' and 'How to pitch, bitch!'"
+    talk_description: "How to start and grow your startup in the US; My learnings from pitch bootcamp at Techstars and on stage at [Websummit](http://awinter.me/2014/09/26/websummit-alpha-companies-pitch-till-you-drop/)."
+    linkedin: http://www.linkedin.com/pub/alexandre-winter/0/36/409
+    twitter: https://twitter.com/awinter
