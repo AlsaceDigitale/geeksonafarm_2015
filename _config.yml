@@ -15,6 +15,10 @@ team_members:
     nickname: jayce
     xing:
     twitter: https://twitter.com/Jc_gay
+  - name: Kathleen Fritzsche
+    nickname: kathleen_fritzsche
+    twitter: https://twitter.com/kathl_fritzsche
+    linkedin: https://de.linkedin.com/in/kathleenfritzsche
   - name: Stéphane Becker
     nickname: whirly
     linkedin: https://www.linkedin.com/in/stephanebecker
@@ -36,6 +40,13 @@ speakers:
     talk_description: "* The disruption of exponential technologies and the fields ready for entrepreneurial exploitation\n\n* The mindset required to bootstrap an exponential curve\n\n* The secrets of going skunk\n\n* The motivation and flow states to release the human potential."
     linkedin: https://www.linkedin.com/pub/yan-erik-decorde/20/49/854
     twitter: https://twitter.com/yanerikdecorde
+  - name: Kathleen Fritzsche
+    title: Co-Founder at Accelerate Stuttgart
+    bio: "Kathleen attended her first Startup Weekend in 2010 and has been co-organizing and facilitating several events since then. She co-founded StartUp Stuttgart in 2011, the main startup community in Southwest Germany, and Accelerate Stuttgart in 2012. Accelerate Stuttgart is building an accelerator program for startups in Stuttgart and the region. The main goal is to foster and maintain a vibrant startup community in Baden-Württemberg and to help founders to establish their companies."
+    talk_title: "Startup community insights - Stuttgart and the region"
+    talk_description: "Kathleen will give you some insights into the startup community in Stuttgart and the region, the so-called Neckar Valley. She'll also talk about the success factors of a vibrant community and the advantages and struggles of smaller startup communities."
+    twitter: https://twitter.com/kathl_fritzsche
+    linkedin: https://de.linkedin.com/in/kathleenfritzsche
   - name: Thibaut Vincent
     title: Founder of Lemon Factory
     bio: "Thibault is the founder of [Lemon Factory](http://lemonfactory.fr/), a french conversion rate optimization agency. His key areas of expertise are conversion rate optimization, copywriting and website monetization.\n\nHe has written a best-selling book, published by Pearson, on how to make money with a website. And a second one on affiliate marketing. He speaks regularly at events, conferences and business schools (La Sorbonne, Inseec, SEO Camp Day, JCertif, etc.)."
