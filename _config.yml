@@ -1,7 +1,7 @@
 # Site settings
 title: Geeks on a Farm 2015
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://www.geeks-on-a-farm.com" # the base hostname & protocol for your site
+url: "http://www.geeksonafarm.com" # the base hostname & protocol for your site
 # Build settings
 markdown: kramdown
 paginate: 5
@@ -47,6 +47,12 @@ speakers:
     talk_description: "Kathleen will give you some insights into the startup community in Stuttgart and the region, the so-called Neckar Valley. She'll also talk about the success factors of a vibrant community and the advantages and struggles of smaller startup communities."
     twitter: https://twitter.com/kathl_fritzsche
     linkedin: https://de.linkedin.com/in/kathleenfritzsche
+  - name: Matthias Hornberger
+    title: "VC, CFO at Kizoo"
+    bio: "Matthias is CFO of Kizoo. He has been part of the senior management team since the IPO of the AG in 2000. With his long-standing experience in the investment sector and his comprehensive knowledge of typical features of successful business models on the Internet, he is a competent reference person for young founders. Matthias has extensive contacts in the high-tech industry and numerous local and national networks."
+    talk_title: "How to pitch a VC"
+    linkedin: https://de.linkedin.com/pub/matthias-hornberger/0/184/a51
+    twitter: https://twitter.com/mho1960
   - name: Thibaut Vincent
     title: Founder of Lemon Factory
     bio: "Thibault is the founder of [Lemon Factory](http://lemonfactory.fr/), a french conversion rate optimization agency. His key areas of expertise are conversion rate optimization, copywriting and website monetization.\n\nHe has written a best-selling book, published by Pearson, on how to make money with a website. And a second one on affiliate marketing. He speaks regularly at events, conferences and business schools (La Sorbonne, Inseec, SEO Camp Day, JCertif, etc.)."
